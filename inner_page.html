@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Добро пожаловать в городок Седона</title>
+  <title>Выбор отеля в городе Седона</title>
 </head>
 
 <body>
 <header>
+  <a href="index.html">
+    <img src="https://via.placeholder.com/100x100" alt="Логотип «Седона»">
+  </a>
   <nav>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/100x100" alt="Логотип «Седона»">
-    </a>
     <ul>
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
@@ -22,32 +22,34 @@
 
 <main>
   <div>
-    <div>
-      <div class="filter_infr">
-        <p>Инфраструктура:</p>
-        <input type="checkbox" name="swimming_pool" id="swimming_pool" checked>
-        <label for="swimming_pool">Бассейн</label><br>
-        <input type="checkbox" name="parking" id="parking">
-        <label for="parking">Парковка</label><br>
-        <input type="checkbox" name="Wi-fi" id="Wi-fi">
-        <label for="Wi-fi">Wi-fi</label><br>
+    <form action="" method="post">
+      <div>
+        <div class="filter_infr">
+          <p>Инфраструктура:</p>
+          <input type="checkbox" name="swimming_pool" id="swimming_pool" checked>
+          <label for="swimming_pool">Бассейн</label><br>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">Парковка</label><br>
+          <input type="checkbox" name="Wi-fi" id="Wi-fi">
+          <label for="Wi-fi">Wi-fi</label><br>
+        </div>
+        <div class="filter_th">
+          <p>Тип жилья:</p>
+          <input type="checkbox" name="hotel" id="hotel" checked>
+          <label for="hotel">Гостиница</label><br>
+          <input type="checkbox" name="motel" id="motel" checked>
+          <label for="motel">Мотель</label><br>
+          <input type="checkbox" name="apartments" id="apartments" checked>
+          <label for="apartments">Апартаменты</label><br>
+        </div>
       </div>
-      <div class="filter_th">
-        <p>Тип жилья:</p>
-        <input type="checkbox" name="hotel" id="hotel" checked>
-        <label for="hotel">Гостиница</label><br>
-        <input type="checkbox" name="motel" id="motel" checked>
-        <label for="motel">Мотель</label><br>
-        <input type="checkbox" name="apartments" id="apartments" checked>
-        <label for="apartments">Апартаменты</label><br>
+      <div>
+        <p>Стоимость в сутки (Р):</p>
+        <input type="text" value="от 0">
+        <input type="text" value="до 3000"><br><br>
+        <button type="submit">Показать</button>
       </div>
-    </div>
-    <div>
-      <p>Стоимость в сутки (Р):</p>
-      <input type="text" value="от 0">
-      <input type="text" value="до 3000"><br><br>
-      <button type="submit">Отправить</button>
-    </div>
+    </form>
   </div>
 
   <div>
@@ -63,23 +65,20 @@
     <div class="hotels">
       <div>
         <img src="https://via.placeholder.com/100x100" alt="Отель»">
-        <h2>
-          Amara Resort & Spa
-        </h2>
-        <span>
-          гостиница от 4000 Р.
-        </span>
+        <h2>Amara Resort & Spa</h2>
+        <span>гостиница от</span>
+        <span>4000 Р.</span>
         <div class="buttons">
           <input type="submit" value="Подробнее">
           <input type="submit" value="Забронировать">
         </div>
         <div class="rating">
-          <div class="rating_stars">
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-          </div>
+          <ul class="rating_stars">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
           <div class="rating_overage">
             Рейтинг: 8.9
           </div>
@@ -88,22 +87,19 @@
 
       <div>
         <img src="https://via.placeholder.com/100x100" alt="Отель»">
-        <h2>
-          Desert Quailinn
-        </h2>
-        <span>
-          мотель от 3500 Р.
-        </span>
+        <h2>Desert Quailinn</h2>
+        <span>мотель от</span>
+        <span>3500 Р.</span>
         <div class="buttons">
           <input type="submit" value="Подробнее">
           <input type="submit" value="Забронировать">
         </div>
         <div class="rating">
-          <div class="rating_stars">
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-          </div>
+          <ul class="rating_stars">
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+          </ul>
           <div class="rating_overage">
             Рейтинг: 8.9
           </div>
@@ -112,12 +108,9 @@
 
       <div>
         <img src="https://via.placeholder.com/100x100" alt="Отель»">
-        <h2>
-          Villars AT Poco Deablo
-        </h2>
-        <span>
-          апартаменты от 2000 Р.
-        </span>
+        <h2>Villars AT Poco Deablo</h2>
+        <span>апартаменты от</span>
+        <span>2000 Р.</span>
         <div class="buttons">
           <input type="submit" value="Подробнее">
           <input type="submit" value="Забронировать">
@@ -125,28 +118,22 @@
       </div>
 
       <div class="rating">
-        <div class="rating_stars">
-          <span>*</span>
-          <span>*</span>
-        </div>
+        <ul class="rating_stars">
+          <li>*</li>
+          <li>*</li>
+        </ul>
         <div class="rating_overage">
           Рейтинг: 9.2
         </div>
       </div>
     </div>
   </div>
-
-
-  </div>
-
 </main>
 
 <footer>
   <div>
-    <p>
-    <p>#VISITSEDONA</p><br>
+    <p>#VISITSEDONA</p>
     Телефон: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
-    </p>
   </div>
 
   <div>
