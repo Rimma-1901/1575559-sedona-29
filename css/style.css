@@ -183,38 +183,33 @@ img {
   list-style: none;
 }
 
-.social-button {
+/*.social-button {
   color: inherit;
   background-color: #0099ef;
- /* width: 30px;
-  height: 30px;*/
-}
-
-/*.social-button svg {
-
+ !* width: 30px;
+  height: 30px;*!
 }*/
 
+.social_button svg {
+  width: 30px;
+  height: 30px;
+}
 
-.social-button svg:hover {
+.social_button {
+  background-color: var(--special-light-blue);
+}
+
+.social_button:hover {
   background-color: var(--special-blue);
 
 }
 
-/*
-.social-button:focus {
-  background-color: var(--special-light-blue);
-}
-*/
-
-.social-button svg:active {
+.social_button:active {
   background-color: var(--special-extra-blue);
-
 }
 
 
-.social_button svg {
-  background-color: var(--special-light-blue);
-}
+
 
 .footer-copyright svg {
   fill: #231F20;
