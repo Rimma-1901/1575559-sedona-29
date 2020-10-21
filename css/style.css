@@ -269,13 +269,20 @@ background-color: var(--basic-white);
   background-image: url("../img/fon_search.svg");
 }*/
 
+.knopka {
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .search_body button {
   font: inherit;
   text-align: center;
-  color: var(--basic-black);
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  /*background-color: var(--special-light-blue);*/
+  background-color: var(--special-light-blue);
   border: none;
 }
 
@@ -287,6 +294,7 @@ background-color: var(--basic-white);
   background-color: var(--special-extra-blue);
   border: none;
 }
+
 
 
 /*Footer*/
