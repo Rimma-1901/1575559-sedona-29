@@ -667,7 +667,7 @@ img {
 
 
 .filter_infr, .filter_type_house {
-  display: inline-block;
+  /*display: inline-block;*/
   width: 25%;
   vertical-align: top;
   /* padding: 27px 10px 30px; */
@@ -675,20 +675,25 @@ img {
   /* padding-left: 26px; */
   padding-left: 22px;
   box-sizing: border-box;
+
+  flex-flow: column;
+  display: inline-flex;
+  height: 217px;
 }
+
 
 .filter_infr {
   padding-left: 72px;
 }
-
+/*
 .click:not(:last-child) {
-  /* margin-bottom: 20px; */
+  !* margin-bottom: 20px; *!
   margin-bottom: 20px;
 }
 
 .click label {
   position: relative;
-  /* margin-left: 40px; */
+  !* margin-left: 40px; *!
   margin-left: 39px;
   cursor: pointer;
 }
@@ -703,7 +708,7 @@ img {
   position: absolute;
   left: -41px;
   font-family: "symbols-sedona";
-  /* font-size: 26px; */
+  !* font-size: 26px; *!
   font-size: 31px;
 }
 
@@ -712,9 +717,43 @@ img {
 .click input:checked + label::before {
   content: '\2611';
 }
+*/
 
 
 
+
+.click {
+  margin-left: 40px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 21px;
+  line-height: 25px;
+}
+
+.click::after,
+.click::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: -40px;
+}
+.click::after {
+  background-image: url("../img/checkbox_on.svg");
+  display: none;
+}
+
+.click::before {
+  background-image: url("../img/checkbox_off.svg");
+}
+
+.filter_infr input:checked + .click::after,
+.filter_type_house input:checked + .click::after {
+  display: block;
+}
 
 .price_range {
   display: inline-block;
@@ -1092,3 +1131,4 @@ img {
   margin-right: 72px;
   background: #f2f2f2;
 }
+
