@@ -19,7 +19,7 @@ try {
   storageArrival = localStorage.getItem('arrival');
   storageDeparture = localStorage.getItem('departure');
 } catch(err) {
-  isStorage = true;
+  isStorage = false;
 }
 
 popupButton.addEventListener('click', function(evt) {

@@ -706,7 +706,8 @@ img {
   font-weight: bold;
 }
 
-.filter_infrastructure, .filter_type_house {
+.filter_infrastructure,
+.filter_type_house {
   display: inline-block;
   width: 25%;
   vertical-align: top;
