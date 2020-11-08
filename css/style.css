@@ -208,6 +208,8 @@ img {
 }
 
 .causes_list {
+  min-height: 330px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,6 +260,9 @@ img {
 }
 
 .causes_have_list {
+  height: 256px;
+  min-height: 256px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,6 +308,8 @@ img {
   text-align: center;
   padding: 58px 6% 0;
   background-color: var(--basic-white);
+  min-height: 148px;
+  overflow: hidden;
 }
 
 .block h3 {

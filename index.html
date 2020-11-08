@@ -112,10 +112,10 @@
 
         <form  action="https://echo.htmlacademy.ru" method="post">
           <button class="search_header">Поиск гостиницы в Седоне</button>
-          <div class="search_body search_form  modal_show ">
+          <div class="search_body search_form  modal_show display_none">
             <div class="form_line clearfix">
               <label for="date">Дата заезда:</label>
-              <input class="date field" type="text" id="date" name="date" placeholder="24 апреля 2017" required="">
+              <input class="date field" type="text" id="date" name="date" value="24 апреля 2017">
 
               <svg class="icon_calendar icon_arrival" width="21" height="23" viewBox="0 0 21 23" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@
 
             <div class="form_line clearfix">
               <label for="departure">Дата выезда:</label>
-              <input class="date field" type="text" id="departure" name="departure" placeholder="4 июля 2017" required="">
+              <input class="date field" type="text" id="departure" name="departure"  value="4 июля 2017">
 
               <svg class="icon_calendar icon_departure" width="21" height="23" viewBox="0 0 21 23" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +149,7 @@
                     <rect width="12" height="3"/>
                   </svg>
 
-                  <input class="unit field" type="text" id="adult" name="adults"  value="2" required="">
+                  <input class="unit field" type="text" id="adult" name="adults"  value="2">
 
                   <svg id="amountAdultPlus" class="find_button plus_find_button" width="11" height="11" viewBox="0 0 11 11" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +169,7 @@
                     <rect width="12" height="3"/>
                   </svg>
 
-                  <input class="unit field" type="text" id="child" name="child"  value="0" required="">
+                  <input class="unit field" type="text" id="child" name="child"  value="0">
 
                   <svg id="amountChildrenPlus" class="find_button plus_find_button" width="11" height="11" viewBox="0 0 11 11" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
