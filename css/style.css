@@ -113,7 +113,7 @@ img {
 .header {
   position: relative;
   min-height: 513px;
-  background: #81B3D2 url("../img/background_photo.jpg") no-repeat 50% 0;
+  background: #81B3D2 url("../img/photo.jpg") no-repeat 50% 0;
 }
 
 .banner_inform {
@@ -690,7 +690,7 @@ img {
 .filter_block {
   width: 100%;
   color: var(--basic-white);
-  background: #81B3D2 url("../img/background_page_hotels.jpg") no-repeat 50% 0;
+  background: #81B3D2 url("../img/page_hotels.jpg") no-repeat 50% 0;
   height: 217px;
   margin-bottom: 5px;
 }
@@ -750,12 +750,12 @@ img {
 }
 
 .click::after {
-  background-image: url("../img/checkbox_on.svg");
+  background-image: url("../img/turn_on.svg");
   display: none;
 }
 
 .click::before {
-  background-image: url("../img/checkbox_off.svg");
+  background-image: url("../img/turn_off.svg");
 }
 
 .filter_infrastructure input:checked + .click::after,
